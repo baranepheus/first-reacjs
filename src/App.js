@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+/* Styles */
+
+import './App.css'
+
+/* Components */
+import Card from './Card'
+
+const App = () => {
+
+    return(
+        <div className='app-main'>
+            <Card name="Erika" age={22} gender="Female"/>
+            <Card name="Denji" age={16} gender="Male"/>
+            <Card name="Reze" age={16} gender="Female"/>
+            <Card name="Power" age={16} gender="Female"/>
+        </div>
+    )
 }
 
-export default App;
+export default App
